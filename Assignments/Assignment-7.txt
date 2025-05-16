@@ -1,0 +1,73 @@
+
+ASSIGNMENT -7
+--------------
+HTML:
+
+1.WHAT IS HTML?
+    Its Hyper Text Markup Language
+
+2.WHY HTML IS USED?
+    Used to stucture the content of web page
+
+3.What is Emmet & List 5 Emmet 
+    Its powerful toolkit of web devaloper for speed of HTML,CSS
+   ( >, +, *, (), $)
+
+4.SHORT CUT CREATE of Emmet Boiler plate of HTML
+    ! press tab or html 5
+   
+5.WHAT STRUCTURE OF HTML
+ 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+</body>
+</html>
+    
+6.WHAT IS HEAD TAG
+   Content displaying the web pages
+
+7.WHAT IS BODY TAG 
+    All content of web devalopers display the inner of body tag
+
+8.IMPORTANT 3 ELEMENTS OR TAGS
+    <html> , <head> , <body> 
+
+9.WHAT IS DIFFERENT B/W ELEMENTS & TAGS IN HTML
+    <p></p> is the paragraph tag. p is the element
+ ----------------------------------------------------------------------------   
+CSS:
+
+1.WHAT IS CSS
+   CSS is Cascading Style Sheet
+
+2.WHY IS CSS
+   Create the style of content
+
+3.HOW TO CONNECT HTML & CSS , Tell the emmet Shortcut
+    Used to link comment.     <link rel="stylesheet" href="css path">
+
+4.HOW TO GET FONT & COLOR , IMAGE, CDN
+    Font - font-[font family]
+    color - text-[color]
+    image - <img src="" alt="">
+    CDN -Use Local file and Imagekit website
+
+5.BASIC CSS FAMILY : Text Family, Color & Background Family, Box Model 
+     Text , Background color , Background image , padding ,border ,margin
+
+6.WHEN TO USE BACKGROUND IMG VS IMG TAG
+    HTML -image tag
+    CSS - Background image property     
+ 
+7.WHAT IS LAYOUT & Explain About flexbox Properties
+    Layout is arrangement and positioning of element.used to arrange and distribute items within a container.
+
+8.WHAT IS TAILWIND CSS & WHY IS IT USED
+    Its is a utility based CSS framework.Its used Speed and Efficiency.
+
