@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-11</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="2xl:container mx-auto">
+        <div class="w-[90%] mx-auto flex justify-center items-center py-10">
+            <div class=" bg-rose-300 px-10 py-6 rounded-lg">
+                <h1 class="text-3xl text-center text-white">Update Password</h1>
+                <form  id="form" class="py-6">
+                    <div >
+
+                        <label for="newpass" class="text-[15px] text-white">NEW PASSWORD</label>
+                        <br>
+                        <input 
+                        type="password" 
+                        name="newpass" 
+                        class="border rounded-lg p-1"
+                        id="new_pass"
+                        required
+                        >
+                        <p class="text-red-600 text-[12px]" id="PassError"></p>
+                    </div><br>
+                    <div >
+
+                        <label for="confpass"  class="text-[15px] text-white">CONFORM PASSWORD</label> <br>
+                        <input 
+                        type="password" 
+                        name="confpass" 
+                        class="border rounded-lg p-1"
+                        id="conf_pass"
+                        required
+                        >
+                        <p class="text-red-600 text-[12px]" id="conferror"></p>
+
+                    </div>
+                    <div class="py-5 flex justify-center">
+                        <button class="bg-[#0064cf] py-2 px-6 rounded-lg text-[20px] text-white ">Update</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        var form = document.getElementById("form")
+        var new_pass = document.getElementById("new_pass")
+        var conf_pass = document.getElementById("conf_pass")
+        var PassError = document.getElementById("PassError")
+        var conferror = document.getElementById("conferror")
+
+
+        form.addEventListener("submit", (e) => {
+
+            e.preventDefault();
+            advancedValidation(new_pass.value, conf_pass.value)
+   
+        });
+        function advancedValidation(new_pass,conf_pass){
+            const passRegex =/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+            if (new_pass.match(passRegex)) {
+                console.log("Your Password correct");
+                PassError.textContent="";             
+                
+            } else {
+                console.log("Invalid Password");
+                
+                PassError.textContent="Required";
+                 
+            }
+            if (conf_pass.match(new_pass)) {
+                console.log("Your Password correct");
+                conferror.textContent="";             
+                
+            } else {
+                console.log("Invalid Password");
+                conferror.textContent="Passwords must be same";
+                
+                 
+            }
+        }
+        
+
+
+    </script>
+    
+</body>
+</html>

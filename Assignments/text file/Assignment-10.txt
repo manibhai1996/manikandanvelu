@@ -1,0 +1,129 @@
+
+ ASSIGNMENT - 10
+
+1.What is JavaScript?
+   *It is a language of web is used to provide of website.
+   *Its a Dynamic language.
+   *Javascirpt is a Interpted language.
+   *Javascirpt is a single thread language.
+-----------------------------------------------------------------------
+2.Variables and Types:
+   *Variable is a container.Its used to store the values.
+Types: var, let, const
+
+  ex: 
+var age=25;               Output:
+console .log(age);         25
+
+var name="Mani";          Output
+console .log(name);        Mani
+------------------------------------------------------------------------------
+
+3.Comments in JavaScript:
+  *single comment - ctrl+/
+  *Multiple comment - /**
+-------------------------------------------------------------------
+4.Operations:
+
+Exercise:
+
+Addition:
+
+var x = 10;
+var y = 5;
+
+var a = x+y;  // 10+5;
+console.log(a); // Output: 15
+
+Subtraction:
+
+var x = 10;
+var y = 5;
+
+var a = x-y;  // 10-5;
+console.log(a); // Output: 5
+
+Multiplication:
+
+var x = 10;
+var y = 5;
+
+var a = x*y;  // 10*5;
+console.log(a); // Output: 50
+
+Division:
+
+var x = 10;
+var y = 5;
+
+var a = x/y;  // 10/5;
+console.log(a); // Output: 2
+--------------------------------------------------------------
+5.Data Types:
+Number: Numeric values, including integers and floating-point numbers.
+    var age = 29;
+    var DtOfYr = 1996;
+String: Text enclosed in single or double quotes.
+    var name = "Manikandan";
+    var message = 'Hello, world!';
+Boolean:Logical values, either true or false.
+    var isLogged = true;
+    var hasPermission = false;
+Array: Its an ordered list of values.
+    var colors = ["red", "green", "blue"];
+---------------------------------------------------------------------
+6.Functions in JavaScript:
+function greetUser(name) {
+  return "Hello, " + name + "!";
+}
+
+var userName = "John";
+var greeting = greetUser(userName);
+
+console.log(greeting);                   //Output : Hello John !
+--------------------------------------------------------------------------
+7.if Else in JavaScript:
+
+var temperature = 35;
+
+if (temperature > 30) {
+  console.log("It's hot outside!");
+} else {
+  console.log("It's not too hot.");
+}
+-----------------------------------------------------------------------
+8.FOR LOOP:
+
+for (let i = 1; i <= 5; i++) {
+  console.log("Value:", i);
+}  
+//Output:
+
+Value: 1
+Value: 2
+Value: 3
+Value: 4
+Value: 5
+------------------------------------------------------
+9.Loose vs Strict Equality:
+
+Loose Equality: Its consider the only a value.
+Ex:console.log("5" == 5); // Output: true (Type coercion: "5" becomes 5)
+
+Strict Equality: Its check the both value and type.
+Ex : console.log("5" === 5); // Output: false (Different types)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
