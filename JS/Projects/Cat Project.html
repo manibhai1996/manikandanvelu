@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex flex-col items-center bg-black h-screen">
+        <div>
+            <img 
+            src="https://ik.imagekit.io/zh4dpgrvc/Project%20Files/Cat%20Project/bulb-go-on-img.png?updatedAt=1747114124951" alt="bulb-on-image"
+            id="bulb_on" class="h-[250px]" 
+            >
+        </div>
+        <div>
+            <img
+            src="https://ik.imagekit.io/zh4dpgrvc/Project%20Files/Cat%20Project/cat-img.png?updatedAt=1747114214604" alt=""
+             id="cat_on" class="h-[250px]"
+            >
+        </div>
+        <div class="bg-[#7b8794] w-fit p-5 rounded-lg ">
+            <h1 id="swit_on" class="text-white text-[24px] leading-[29px] font-[Roboto]">Switched On</h1>
+            <div class="flex justify-evenly">
+
+                <button id="off_btn" class="text-white text-[24px] leading-[36px] font-[Roboto]">OFF</button>
+                <button id="on_btn" class="text-white text-[24px] leading-[36px] font-[Roboto]">ON</button>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var bulb_on = document.getElementById("bulb_on");
+        var cat_on = document.getElementById("cat_on");
+
+        var off_btn = document.getElementById("off_btn");
+        var on_btn = document.getElementById("on_btn");
+
+         off_btn .addEventListener("click", () => {
+            console.dir(bulb_on);
+            bulb_on .src ="https://ik.imagekit.io/zh4dpgrvc/Project%20Files/Cat%20Project/bulb-go-off-img.png?updatedAt=1747114214476"
+            
+            cat_on .src ="https://ik.imagekit.io/zh4dpgrvc/Project%20Files/Cat%20Project/cat-eyes-img.png?updatedAt=1747114214464"
+
+         });
+        
+         on_btn .addEventListener("click", () => {
+
+            bulb_on .src ="https://ik.imagekit.io/zh4dpgrvc/Project%20Files/Cat%20Project/bulb-go-on-img.png?updatedAt=1747114124951"
+            
+            cat_on .src ="https://ik.imagekit.io/zh4dpgrvc/Project%20Files/Cat%20Project/cat-img.png?updatedAt=1747114214604"
+
+         });
+         
+         off_btn .addEventListener("click", () => {
+            console.dir(swit_on);
+            swit_on .textContent ="Switched Off"
+
+         });
+         on_btn .addEventListener("click", () => {
+            console.dir(swit_on);
+            swit_on .textContent ="Switched On"
+
+         });
+
+
+
+        
+    </script>
+    
+</body>
+</html>
